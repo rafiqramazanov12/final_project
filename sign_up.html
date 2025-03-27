@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign_up.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header_navbar">
+            <section class="header_navbar_left">
+                <div class="header_navbar_left_logo">IMDb</div>
+                <button class="header_navbar_left_logo_btn">☰</button>
+                <select class="header_navbar_left_category ">
+                    <option value="header_navbar_left_category_all">All</option>
+                    <option value="header_navbar_left_category_movies">Movies</option>
+                    <option value="header_navbar_left_category_tvshows">TV Shows</option>
+                </select>
+            </section>
+
+            <section class="header_navbar_left_search">
+                <input type="text" class="header_navbar_left_search_input" placeholder="Search IMDb">
+                <button class="header_navbar_left_search_btn">🔍</button>
+            </section>
+
+            <section class="header_navbar_right">
+                <ul class="header_navbar_right_menu">
+                    <li class="header_navbar_right_menu_item"><a href="#">IMDbPro</a>
+                    </li>
+                    <li class="header_navbar_right_menu_item"><a href="#">Watchlist</a>
+                    </li>
+                    <li class="header_navbar_right_menu_item"><a href="#">Sign In</a> </li>
+                </ul>
+                <select class="header_navbar_right_language">
+                    <option value="header_navbar_right_language_en">EN</option>
+                    <option value="header_navbar_right_language_az">AZ</option>
+                </select>
+            </section>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <section class="main_sign_up_section">
+            <div class="main_sign_up_section_left">
+                <img src="./assets/img/logo.svg" alt="main_sign_up_section_left_img"
+                    class="main_sign_up_section_left_img">
+                <div class="main_sign_up_section_left_card">
+                    <h2 class="main_sign_up_section_left_card_title">Sign Up</h2>
+                    <form class="main_sign_up_section_left_card_form">
+                        <div class="input-wrapper">
+                            <input type="text" class="main_sign_up_section_left_card_form_input email_input"
+                                placeholder="Email Address">
+                            <span class="main_sign_up_section_left_card_form_error_message_first">Can’t be empty</span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="password" class="main_sign_up_section_left_card_form_input password_input"
+                                placeholder="Password">
+                            <span class="main_sign_up_section_left_card_form_error_message_second">Can’t be empty</span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="password" class="main_sign_up_section_left_card_form_input repeat_input"
+                                placeholder="Repeat Password">
+                            <span class="main_sign_up_section_left_card_form_error_message_third">Can’t be empty</span>
+                        </div>
+
+                        <button type="submit" class="main_sign_up_section_left_card_btn">
+                            <p class="main_sign_up_section_left_card_btn_note">Create an account</p>
+                        </button>
+                    </form>
+
+
+                    <div class="main_sign_up_section_left_card_flex">
+
+                        <p class="main_sign_up_section_left_card_second_note">Already have an account?
+                            <a href="login.html" class="main_sign_up_section_left_card_second_note_span">Login</a>
+                        </p>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+    </main>
+    <script src="./sign_up.js"></script>
+</body>
+
+</html>

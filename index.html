@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <nav class="header_navbar">
+            <section class="header_navbar_left">
+                <div class="header_navbar_left_logo">IMDb</div>
+                <button class="header_navbar_left_logo_btn">☰</button>
+                <select class="header_navbar_left_category ">
+                    <option value="header_navbar_left_category_all">All</option>
+                    <option value="header_navbar_left_category_movies">Movies</option>
+                    <option value="header_navbar_left_category_tvshows">TV Shows</option>
+                </select>
+            </section>
+
+            <section class="header_navbar_left_search">
+                <input type="text" class="header_navbar_left_search_input" placeholder="Search IMDb">
+                <button class="header_navbar_left_search_btn">🔍</button>
+            </section>
+
+            <section class="header_navbar_right">
+                <ul class="header_navbar_right_menu">
+                    <li class="header_navbar_right_menu_item"><a href="#">IMDbPro</a>
+                    </li>
+                    <li class="header_navbar_right_menu_item"><a href="#">Watchlist</a>
+                    </li>
+                    <li class="header_navbar_right_menu_item"><a href="#">Sign In</a> </li>
+                </ul>
+                <select class="header_navbar_right_language">
+                    <option value="header_navbar_right_language_en">EN</option>
+                    <option value="header_navbar_right_language_az">AZ</option>
+                </select>
+            </section>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main_section">
+            <div class="main_section_left">
+                <h2 class="main_section_left_title">Movies</h2>
+                <p class="main_section_left_note"> Movies move us like nothing else can, whether they’re scary, funny,
+                    <br> dramatic, romantic or anywhere in-between. So many titles, so much to <br> experience. </p>
+                <button class="main_section_left_btn">start watching movies</button>
+            </div>
+
+            <div class="main_section_right">
+                <img src="./images/movies_img.jpg" alt="main_section_right_img" class="main_section_right_img">
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./main.js"></script>
 </body>
+
 </html>
