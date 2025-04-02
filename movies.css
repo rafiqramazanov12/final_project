@@ -72,7 +72,7 @@ header .header_container_profile_img {
   bottom: 32px;
 }
 
-.s {
+.parent_container {
   display: flex;
   margin-top: 30px;
 }
